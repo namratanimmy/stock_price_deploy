@@ -5,7 +5,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = keras.models.load_model("modelpkl.h5")
 
 
 @app.route('/')
